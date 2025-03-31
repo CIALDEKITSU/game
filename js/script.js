@@ -187,7 +187,7 @@ const initGame = () => {
     inputField.setAttribute("maxlength", correctWord.length);
     scoreArea.innerHTML = score;
 
-    if (score >= 1) {
+    if (score >= 10) {
         winGame();
     }
 }
