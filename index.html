@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Coding By Ali Aslan -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Word Scramble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/words.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h2>Word Scramble Game THE "EMTECH topics"</h2>
+        <div id="start-container">
+         <center><button id="start-btn" onclick="showTopics()"> 
+              <span id="start-text">Start the Game</span>
+          </button></center>
+      </div>
+      
+      <div id="topic-selection" style="display: none;">
+          <h2>Choose a Topic</h2>
+        <div class="topic-container">
+          <center><button class="topic-btn" onclick="startCountdown('Topic 1')">Module 1</button></center>
+          <center><button class="topic-btn" onclick="startCountdown('Topic 2')">module 2</button></center>
+          <center><button class="topic-btn" onclick="startCountdown('Topic 3')">module 3</button></center>
+        </div>
+      </div>
+
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+            <div class="score-area"><span>Score: </span><span class="score">0</span></div>
+        </div>
+    </div>
+
+    
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+    
+  </body>
+</html>
